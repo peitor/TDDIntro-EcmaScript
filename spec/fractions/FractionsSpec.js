@@ -50,7 +50,7 @@ describe("New Fraction creation", function () {
       });
     });
     
-    describe("Deominator is 1, addition of Nominators", function () {
+    describe("Same Denominator", function () {
       var sum;
       beforeEach(function () {
         var f = new Fraction(1, 1);
@@ -58,13 +58,27 @@ describe("New Fraction creation", function () {
         sum = f.add(f2);
       });
 
-      it("should return 2 as nominator", function () {
+      it("should return addition", function () {
         expect(sum.nominator()).toEqual(2);
-      });
-      it("should return 1 as denominator", function () {
         expect(sum.denominator()).toEqual(1);
       });
     });
+    
+    
+    describe("Same Denominator", function () {
+      var sum;
+      beforeEach(function () {
+        var f = new Fraction(1, 4);
+        var f2 = new Fraction(2, 4);
+        sum = f.add(f2);
+      });
+
+      it("should return addition.", function () {
+        expect(sum.nominator()).toEqual(3);
+        expect(sum.denominator()).toEqual(4);
+      });
+    });
+    
   });
 });
 
