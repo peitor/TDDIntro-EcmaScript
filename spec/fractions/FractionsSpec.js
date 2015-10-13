@@ -10,17 +10,17 @@ describe("A test suite", function () {
 
 describe("New Fraction creation", function () {
   var Fraction = require('../../lib/fractions/Fraction');
-  var sum;
+  var f;
   beforeEach(function () {
-    sum = new Fraction(1, 2);
+    f = new Fraction(1, 2);
   });
 
   it("should return 1 as nominator", function () {
-    expect(sum.nominator()).toEqual(1);
+    expect(f.nominator()).toEqual(1);
   });
 
   it("should return 2 as denominator", function () {
-    expect(sum.denominator()).toEqual(2);
+    expect(f.denominator()).toEqual(2);
   });
 });
 
