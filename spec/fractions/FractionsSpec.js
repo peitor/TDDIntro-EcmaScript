@@ -119,6 +119,19 @@ describe("New Fraction creation", function () {
       });
     });
 
+    describe("A Fraction that nominator is multiple of denominator", function () {
+      it("3/3 should reduce.", function () {
+        var f = new Fraction(3, 3);
+        expect(f.nominator()).toEqual(1);
+        expect(f.denominator()).toEqual(1);
+      });
+      
+      it("6/3 should reduce.", function () {
+        var f = new Fraction(6, 3);
+        expect(f.nominator()).toEqual(2);
+        expect(f.denominator()).toEqual(1);
+      });
+    });
   });
 });
 
