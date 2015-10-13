@@ -49,10 +49,23 @@ describe("New Fraction creation", function () {
         expect(sum.denominator()).toEqual(1);
       });
     });
+    
+    describe("Deominator is 1, addition of Nominators", function () {
+      var sum;
+      beforeEach(function () {
+        var f = new Fraction(1, 1);
+        var f2 = new Fraction(1, 1);
+        sum = f.add(f2);
+      });
+
+      it("should return 2 as nominator", function () {
+        expect(sum.nominator()).toEqual(2);
+      });
+      it("should return 1 as denominator", function () {
+        expect(sum.denominator()).toEqual(1);
+      });
+    });
   });
-
-
-
 });
 
 
