@@ -147,6 +147,14 @@ describe("New Fraction creation", function () {
       });
 
     });
+
+    describe("A Fraction multi of 2", function () {
+      it("should reduce.", function () {
+        var f = new Fraction(2, 4);
+        expect(f.nominator()).toEqual(1);
+        expect(f.denominator()).toEqual(2);
+      });
+    });
   });
 });
 
