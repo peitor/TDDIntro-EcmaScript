@@ -141,9 +141,9 @@ describe("New Fraction creation", function () {
       });
 
       it("should reduce.", function () {
-        var f = new Fraction(6, 12);
-        expect(f.nominator()).toEqual(1);
-        expect(f.denominator()).toEqual(2);
+        var f = new Fraction(9, 12);
+        expect(f.nominator()).toEqual(3);
+        expect(f.denominator()).toEqual(4);
       });
 
     });
@@ -153,6 +153,7 @@ describe("New Fraction creation", function () {
 
 
 // TODO LIST
+// 6/12
         // 2/4 + 2/8 = 6/8 = 3/4  REDUCTION!
          
         // 1/0 ??             Error - 0 division
