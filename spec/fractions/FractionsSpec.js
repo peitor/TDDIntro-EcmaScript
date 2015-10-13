@@ -99,6 +99,12 @@ describe("New Fraction creation", function () {
         expect(sum.nominator()).toEqual(5);
         expect(sum.denominator()).toEqual(6);
       });
+      
+       it("should expand 1st denominator.", function () {
+        var sum = new Fraction(3, 4).add(new Fraction(1, 8));
+        expect(sum.nominator()).toEqual(7);
+        expect(sum.denominator()).toEqual(8);
+      });
     });
 
   });
