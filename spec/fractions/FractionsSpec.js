@@ -105,12 +105,13 @@ describe("New Fraction creation", function () {
         expect(sum.nominator()).toEqual(7);
         expect(sum.denominator()).toEqual(8);
       });
-      
-       it("should expand both denominator.", function () {
+
+      it("should expand both denominator.", function () {
         var sum = new Fraction(1, 2).add(new Fraction(1, 3));
         expect(sum.nominator()).toEqual(5);
         expect(sum.denominator()).toEqual(6);
       });
+
     });
 
   });
@@ -119,14 +120,14 @@ describe("New Fraction creation", function () {
 
 
 // TODO LIST
-        // 1/2 + 1/3 = 5/6    
-        // 7/3 + 4/5 = 47/15  complex example, no simplification
+        // 2/4 + 2/8 = 6/8 = 3/4  REDUCTION!
+         
+        // 1/0 ??             Error - 0 division
+        // 2 1/2 ??           Error - not allowed
+        
         // 3/3 + 4/4 = ??     whole numbers, expressed as fraction
         // 1/3 + 2/3 = 3/3    result full number
         // 3 + 4 = 7          whole integers  
-        // 1/3 + 1/2 = 5/6    denominator expansion
-        // 1/0 ??             Error - 0 division
-        // 2 1/2 ??           Error - not allowed
-
+        
 
 
