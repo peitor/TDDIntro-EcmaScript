@@ -1,5 +1,14 @@
 'use strict';
 
+// ******* TODO LIST **********
+// 1/0 ??             Error - 0 division
+// 2,1/2 ??           Error - not allowed
+
+// 3/3 + 4/4 = ??     whole numbers, expressed as fraction
+// 1/3 + 2/3 = 3/3    result full number
+// 3 + 4 = 7          whole integers  
+
+
 describe("New Fraction creation", function () {
   var Fraction = require('../../lib/fractions/Fraction');
 
@@ -161,7 +170,7 @@ describe("New Fraction creation", function () {
         expect(f.denominator()).toEqual(4);
       });
     });
-    
+
     describe("A Fraction multi of 4", function () {
       it("should reduce.", function () {
         var f = new Fraction(8, 24);
@@ -175,21 +184,14 @@ describe("New Fraction creation", function () {
         expect(f.denominator()).toEqual(10);
       });
     });
+
+    describe("Fraction Addition that returns reduced", function () {
+      it("should reduce.", function () {
+        var sum = new Fraction(2, 4).add(new Fraction(2,8));
+        expect(sum.nominator()).toEqual(3);
+        expect(sum.denominator()).toEqual(4);
+      });
+    });
+
   });
 });
-
-
-
-// TODO LIST
-// 6/12
-        // 2/4 + 2/8 = 6/8 = 3/4  REDUCTION!
-         
-        // 1/0 ??             Error - 0 division
-        // 2,1/2 ??           Error - not allowed
-        
-        // 3/3 + 4/4 = ??     whole numbers, expressed as fraction
-        // 1/3 + 2/3 = 3/3    result full number
-        // 3 + 4 = 7          whole integers  
-        
-
-
