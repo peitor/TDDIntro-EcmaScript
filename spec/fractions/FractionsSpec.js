@@ -128,7 +128,7 @@ describe("New Fraction creation", function () {
         // 2/4 + 2/8 = 6/8 = 3/4  REDUCTION!
          
         // 1/0 ??             Error - 0 division
-        // 2 1/2 ??           Error - not allowed
+        // 2,1/2 ??           Error - not allowed
         
         // 3/3 + 4/4 = ??     whole numbers, expressed as fraction
         // 1/3 + 2/3 = 3/3    result full number
