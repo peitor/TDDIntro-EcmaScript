@@ -112,6 +112,11 @@ describe("New Fraction creation", function () {
         expect(sum.denominator()).toEqual(6);
       });
 
+      it("should expand both denominator.", function () {
+        var sum = new Fraction(7, 3).add(new Fraction(4, 5));
+        expect(sum.nominator()).toEqual(47);
+        expect(sum.denominator()).toEqual(15);
+      });
     });
 
   });
