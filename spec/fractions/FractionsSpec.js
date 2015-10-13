@@ -113,15 +113,11 @@ describe("New Fraction creation", function () {
 
 
 // TODO LIST
-        // 1/6 + 2/3 = 5/6    1st denominator expansion
-        // 2/3 + 1/6 = 5/6    2nd denominator expansion
-        // 1/4 + 2/4 = 3/4    same denominator
-        // 1/3 + 2/3 = 3/3    result full number
         // 1/2 + 1/3 = 5/6    
         // 7/3 + 4/5 = 47/15  complex example, no simplification
         // 3/3 + 4/4 = ??     whole numbers, expressed as fraction
+        // 1/3 + 2/3 = 3/3    result full number
         // 3 + 4 = 7          whole integers  
-        // 5/2 +           
         // 1/3 + 1/2 = 5/6    denominator expansion
         // 1/0 ??             Error - 0 division
         // 2 1/2 ??           Error - not allowed
