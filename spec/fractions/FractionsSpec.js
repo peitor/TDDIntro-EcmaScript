@@ -81,18 +81,24 @@ describe("New Fraction creation", function () {
     });
 
     describe("Expand Denominator", function () {
-      it("should exapnd 2nd denominator.", function () {
+      it("should expand 2nd denominator.", function () {
         var sum = new Fraction(1, 6).add(new Fraction(2, 3));
         expect(sum.nominator()).toEqual(5);
         expect(sum.denominator()).toEqual(6);
       });
 
-      it("should exapnd 2nd denominator.", function () {
+      it("should expand 2nd denominator.", function () {
         var sum = new Fraction(1, 8).add(new Fraction(3, 4));
         expect(sum.nominator()).toEqual(7);
         expect(sum.denominator()).toEqual(8);
       });
 
+
+      it("should expand 1st denominator.", function () {
+        var sum = new Fraction(2, 3).add(new Fraction(1, 6));
+        expect(sum.nominator()).toEqual(5);
+        expect(sum.denominator()).toEqual(6);
+      });
     });
 
   });
