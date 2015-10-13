@@ -31,6 +31,22 @@ describe("New Fraction creation", function () {
       expect(f.denominator()).toEqual(4);
     });
   });
+  
+  describe("Fraction Addition", function () {
+    describe("Nominator is 0", function () {
+  
+      it("should return 0 as nominator", function () {
+        var f = new Fraction(0, 1);
+        var f2 = new Fraction(0, 2);
+        var sum = f.add(f2);
+  
+        expect(sum.nominator()).toEqual(0);
+      });
+    });
+  });
+  
+
+  
 });
 
 
