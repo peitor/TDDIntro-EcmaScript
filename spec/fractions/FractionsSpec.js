@@ -2,9 +2,9 @@
 
 describe("New Fraction creation", function () {
   var Fraction = require('../../lib/fractions/Fraction');
-  var f;
 
   describe("Init with 1/2", function () {
+    var f;
     beforeEach(function () {
       f = new Fraction(1, 2);
     });
@@ -17,8 +17,9 @@ describe("New Fraction creation", function () {
       expect(f.denominator()).toEqual(2);
     });
   });
-  
+
   describe("Init with 3/4", function () {
+    var f;
     beforeEach(function () {
       f = new Fraction(3, 4);
     });
@@ -31,22 +32,27 @@ describe("New Fraction creation", function () {
       expect(f.denominator()).toEqual(4);
     });
   });
-  
+
   describe("Fraction Addition", function () {
     describe("Nominator is 0", function () {
-  
-      it("should return 0 as nominator", function () {
+      var sum;
+      beforeEach(function () {
         var f = new Fraction(0, 1);
         var f2 = new Fraction(0, 2);
-        var sum = f.add(f2);
-  
+        sum = f.add(f2);
+      });
+
+      it("should return 0 as nominator", function () {
         expect(sum.nominator()).toEqual(0);
+      });
+      it("should return 1 (from first fraction) as denominator", function () {
+        expect(sum.denominator()).toEqual(1);
       });
     });
   });
-  
 
-  
+
+
 });
 
 
