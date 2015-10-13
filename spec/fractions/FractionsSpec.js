@@ -154,6 +154,12 @@ describe("New Fraction creation", function () {
         expect(f.nominator()).toEqual(1);
         expect(f.denominator()).toEqual(2);
       });
+
+      it("should reduce.", function () {
+        var f = new Fraction(6, 8);
+        expect(f.nominator()).toEqual(3);
+        expect(f.denominator()).toEqual(4);
+      });
     });
   });
 });
