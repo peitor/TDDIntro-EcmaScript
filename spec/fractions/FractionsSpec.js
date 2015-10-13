@@ -125,12 +125,21 @@ describe("New Fraction creation", function () {
         expect(f.nominator()).toEqual(1);
         expect(f.denominator()).toEqual(1);
       });
-      
+
       it("6/3 should reduce.", function () {
         var f = new Fraction(6, 3);
         expect(f.nominator()).toEqual(2);
         expect(f.denominator()).toEqual(1);
       });
+    });
+
+    describe("A Fraction multi of 3", function () {
+      it("should reduce.", function () {
+        var f = new Fraction(3, 6);
+        expect(f.nominator()).toEqual(1);
+        expect(f.denominator()).toEqual(2);
+      });
+
     });
   });
 });
