@@ -161,6 +161,20 @@ describe("New Fraction creation", function () {
         expect(f.denominator()).toEqual(4);
       });
     });
+    
+    describe("A Fraction multi of 4", function () {
+      it("should reduce.", function () {
+        var f = new Fraction(8, 24);
+        expect(f.nominator()).toEqual(1);
+        expect(f.denominator()).toEqual(3);
+      });
+
+      it("should reduce.", function () {
+        var f = new Fraction(12, 40);
+        expect(f.nominator()).toEqual(3);
+        expect(f.denominator()).toEqual(10);
+      });
+    });
   });
 });
 
