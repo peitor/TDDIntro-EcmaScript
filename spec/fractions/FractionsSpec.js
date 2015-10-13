@@ -140,6 +140,12 @@ describe("New Fraction creation", function () {
         expect(f.denominator()).toEqual(2);
       });
 
+      it("should reduce.", function () {
+        var f = new Fraction(6, 12);
+        expect(f.nominator()).toEqual(1);
+        expect(f.denominator()).toEqual(2);
+      });
+
     });
   });
 });
