@@ -7,13 +7,14 @@
 // 3/3 + 4/4 = ??     whole numbers, expressed as fraction
 // 1/3 + 2/3 = 3/3    result full number
 // 3 + 4 = 7          whole integers  
+// toString()        
+// 1/1 toString ??
 
 
 describe("Fractions library", function () {
   var Fraction = require('../../lib/fractions/Fraction');
 
   describe("New Fraction creation", function () {
-    // better names!
     describe("Init with 1/2", function () {
       var f;
       beforeEach(function () {
