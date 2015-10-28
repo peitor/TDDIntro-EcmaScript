@@ -9,7 +9,8 @@
 // 3 + 4 = 7          whole integers  
 // toString()        
 // 1/1 toString ??
-
+// largeNr/largeNr  +  largeNr+1/largeNr  --> causes overflow, but could be calculated if optimization in place
+// TODO: Refa: better test names
 
 describe("Fractions library", function () {
   var Fraction = require('../../lib/fractions/Fraction');
